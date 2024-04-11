@@ -5,7 +5,8 @@ img {
     width: 100%;
 }
 nav {
-    /* display: flex; */
+    background-color: black;
+    margin-top: 0;
 }
 nav ul {
     display: flex;
@@ -13,17 +14,70 @@ nav ul {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-top: 0;
 }
 nav ul li a {
     text-decoration: none;
     padding: 10px;
-    border: solid 2px black;
+    border: solid 2px white;
     margin: 5px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
 }
 .article-items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .item {
     width: 22%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.item div {
+    padding: 10px;
+}
+section {
+    width: 1000px;
+    margin: auto;
+}
+footer {
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+}
+header {
+    background-color: black;
+}
+@media screen and (max-width:1000px){
+    section {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+@media screen and (max-width:499px) {
+    nav {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .item {
+        width: 48%;
+        justify-content: space-around;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .item {
+        width: 100%;
+        margin: 2px;
+    }
 }
